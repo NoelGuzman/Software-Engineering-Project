@@ -6,14 +6,14 @@ from datetime import datetime, time
 from more_itertools import grouper
 import mysql.connector as sql
 ######### OS Environment Settings ################
-environ['IEX_TOKEN'] = 'Tsk_234462620ac5432ab25388f076e97782' # setting Environment Token stops any need of inputing token in every function call
+environ['IEX_TOKEN'] = '' # setting Environment Token stops any need of inputing token in every function call
 environ['IEX_API_VERSION'] = 'iexcloud-sandbox' #required verisons accessable: [v1, iexcloud-sandbox, beta]
 ######### OS Environment Settings ################
 
 ######### Server Info #########
 try:
 
-    dbconnection = sql.connect(host = "sd.websiteinc.com", user = "afadmin_ScrumD", passwd = "SpiceGirls!", database = "afadmin_SpicyStocks")
+    dbconnection = sql.connect(host = "", user = "", passwd = "!", database = "")#Server Info Removed
     cursor = dbconnection.cursor()
 except sql.Error as err:
         print(err)
