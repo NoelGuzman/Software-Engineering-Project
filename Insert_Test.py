@@ -6,14 +6,14 @@ from datetime import datetime, time
 from more_itertools import grouper #this one is use to chunk the symbol list into blocks of 100, not used here
 import mysql.connector as sql
 ######### OS Environment Settings ################
-environ['IEX_TOKEN'] = 'Tsk_234462620ac5432ab25388f076e97782' # Setting Environment Token stops any need of inputing token in every function call
+environ['IEX_TOKEN'] = '' # Setting Environment Token stops any need of inputing token in every function call
                                                               # This is Test Token only, must use regular token for actual data
 environ['IEX_API_VERSION'] = 'iexcloud-sandbox' #required verisons accessible: [v1, iexcloud-sandbox, beta]
 ######### OS Environment Settings ################
 
 ######### Server Info #########
 try:
-    dbconnection = sql.connect(host = "dragon.websiteinc.com", user = "afadmin_ScrumD", passwd = "SpiceGirls!", database = "afadmin_SpicyStocks")
+    dbconnection = sql.connect(host = "", user = "", passwd = "", database = "")#Server Info Removed
     cursor = dbconnection.cursor()
 except sql.Error as err:
         print(err)
