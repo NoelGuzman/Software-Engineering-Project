@@ -3,7 +3,7 @@ import mysql.connector as sql
 ######### Server Info #########
 try:
 
-    dbconnection = sql.connect(host = "sd.websiteinc.com", user = "afadmin_ScrumD", passwd = "SpiceGirls!", database = "afadmin_SpicyStocks")
+    dbconnection = sql.connect(host = "", user = "", passwd = "", database = "")#Server Info Removed
     cursorA = dbconnection.cursor(buffered = True)
     cursorB = dbconnection.cursor(buffered = True)
 except sql.Error as err:
